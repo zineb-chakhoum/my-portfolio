@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Image Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .float-image {
+            width: 200px; /* Set the size of the image */
+            animation: floatAnimation 3s ease-in-out infinite; /* Apply the animation */
+        }
+
+        @keyframes floatAnimation {
+            0% {
+                transform: translateY(0); /* Initial position */
+            }
+            50% {
+                transform: translateY(-20px); /* Move up */
+            }
+            100% {
+                transform: translateY(0); /* Move back to the original position */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Floating Image Animation</h1>
+    
+    <img src="photo_2025-03-15_11-12-09.jpg" alt="Floating Image" class="float-image">
+    <p>This image floats up and down with a smooth animation.</p>
+</body>
+</html>
